@@ -13,16 +13,16 @@ st.set_page_config(
 )
 
 # Load model + encoders
-model = joblib.load('../model/model.pkl')
-explainer = joblib.load('../model/explainer.pkl')
-le_industry = joblib.load('../model/le_industry.pkl')
-le_location = joblib.load('../model/le_location.pkl')
-le_title = joblib.load('../model/le_title.pkl')
-oe = joblib.load('../model/oe_education.pkl')
-oe2 = joblib.load('../model/oe_company.pkl')
+model = joblib.load('model/model.pkl')
+explainer = joblib.load('model/explainer.pkl')
+le_industry = joblib.load('model/le_industry.pkl')
+le_location = joblib.load('model/le_location.pkl')
+le_title = joblib.load('model/le_title.pkl')
+oe = joblib.load('model/oe_education.pkl')
+oe2 = joblib.load('model/oe_company.pkl')
 
 # Load raw data for percentile + comparator
-df_raw = pd.read_csv('../data/job_salary.csv').dropna()
+df_raw = pd.read_csv('data/job_salary.csv').dropna()
 
 def get_seniority(title):
   title = str(title).lower()
