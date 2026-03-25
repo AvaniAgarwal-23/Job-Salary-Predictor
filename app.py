@@ -76,10 +76,11 @@ from scipy.stats import percentileofscore
 pct = int(percentileofscore(df_raw['salary'], salary))
 
 st.subheader("Predicted Salary")
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 col1.metric("Estimated salary", f"${int(salary):,}")
-col2.metric("Industry range", f"${p25:,} – ${p75:,}")
-col3.metric("You are in top", f"{100 - pct}%")
+col2.metric("Industry P25", f"${p25:,}")
+col3.metric("Industry P75", f"${p75:,}")
+col4.metric("You are in top", f"{100 - pct}%")
 
 st.subheader("What's affecting your salary?")
 shap_vals = explainer.shap_values(input_row)
