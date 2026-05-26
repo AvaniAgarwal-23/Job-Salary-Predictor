@@ -1,11 +1,11 @@
-#Job Salary Predictor: 
+# Job Salary Predictor: 
 
 A Machine Learning project that predicts estimated salaries based on job-related features such as experience, education, skills,certifications, comapny size and locaton, and job role.
 The project uses **XGBoost** for accurate salary prediction and provides an interactive interface using **Streamlit**.
 
 ---
 
-#Features
+# Features
 - Salary prediction using Machine Learning
 - XGBoost regression model
 - Data preprocessing and feature engineering
@@ -15,7 +15,7 @@ The project uses **XGBoost** for accurate salary prediction and provides an inte
 
 ---
 
-#Tech Stack
+# Tech Stack
 - Python
 - Pandas
 - NumPy
@@ -26,7 +26,7 @@ The project uses **XGBoost** for accurate salary prediction and provides an inte
 
 ---
 
-#Project Structure
+# Project Structure
 
 ```bash
 .
@@ -41,7 +41,7 @@ The project uses **XGBoost** for accurate salary prediction and provides an inte
 
 ---
 
-#Installation 
+# Installation 
 
 Clone the repository: 
 ```bash
@@ -58,13 +58,13 @@ pip install -r requirements.txt
 ```
 ---
 
-#Run the Project 
+# Run the Project 
 
 Start the Streamlit application:
 ```bash
 streamlit run app.py
 ```
-#Workflow: 
+# Workflow: 
 1. Load dataset
 2. Preprocess data
 3. Train XGBoost model
