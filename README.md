@@ -2,7 +2,7 @@
 
 A Machine Learning project that predicts estimated salaries based on job-related features such as experience, education, skills,certifications, comapny size and locaton, and job role.
 The project uses **XGBoost** for accurate salary prediction and provides an interactive interface using **Streamlit**.
-## Live Demo:
+Live Demo:
 
 https://job-salary-predictor-cxgqsvddnscdtbgk7ybenj.streamlit.app/
 ---
